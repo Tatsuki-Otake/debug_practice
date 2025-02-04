@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   get "practice", to: "practice#index"
   resources :posts
 
-  patch 'users/:id', to: 'users#update'
+  patch "users/:id", to: "users#update"
 
   resources :orders do
-    post 'complex_params', on: :collection
-    post 'conditional_debug', on: :collection
+    post "complex_params", on: :collection
+    post "conditional_debug", on: :collection
   end
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
