@@ -2,25 +2,25 @@
 
 binding.pryを使ってデバッグする練習
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+よく使うコマンド： rails c - コンソールを起動
 
-Things you may want to cover:
+params - パラメータを表示
+hoge_params - パラメータを表示
+params[:hoge] - 'hoge'のパラメータを表示
+params[:key] - パラメータの値を表示
 
-* Ruby version
+@hoge.attributes - モデルの属性を表示
+@hoge.hoge - モデルのメソッドを表示
 
-* System dependencies
+# console内でそのまま使用可能
+ls - 利用可能なメソッドやローカル変数の一覧
+whereami - 現在の場所の確認
+next - 次の行へ
+continue - 実行を再開
+show-source - メソッドの定義を表示
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+# デバッグのテクニック
+ curl -X POST -d '{"key":"value"}' http://localhost:3000/hoge - パラメータを送信
 
 * ...
